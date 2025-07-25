@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Reels Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  html, body {
+    overflow-y: scroll;
+  }
+
+  /* Hide scrollbar for all browsers */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+</style>
+
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+
+  <main class="max-w-6xl mx-auto py-8 px-1">
+    <div class="flex justify-end mb-2">
+      <button id="edit-mode-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+        Edit Mode
+      </button>
+    </div>
+    <h2 class="text-2xl font-bold mb-2">‎ ‎ ‎Views</h2>
+
+    <div class="grid grid-cols-3 gap-1">
+
+      
+      <!-- Each reel block -->
+      <!-- Only image src and view values differ -->
+      <!-- You can generate or map from backend in real apps -->
+      <!-- Loop starts here -->
+      <!-- Reel blocks below -->
+      
+      <!-- Repeat for all 12 reels with respective images and views -->
+      <!-- START -->
+      <!-- We use a loop-style copy with real values -->
+      
+      <!-- Begin Reel Blocks -->
+      <!-- We use images from https://picsum.photos/400/711 to 722 -->
+
+      <!-- Reel Template -->
+      <!-- Just copy/paste with different values below -->
+
+      <!-- Start Loop -->
+      <!-- The following block is repeated 12 times with different data -->
+
+      <!-- Reel Blocks -->
+      <!-- Generated from 711 to 722 -->
+
+      <!-- Template for 12 reels -->
+      <!-- Views values taken from your earlier code -->
+
+      <!-- This block is repeated with different src and view numbers -->
+
+      <!-- Reel Loop (12 items) -->
+      <!-- Index: 711 to 722 -->
+
+      <!-- Reel Blocks Begin -->
+      
+      <!-- Reel 1 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/711" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="2,700,767">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>2,700,767</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 2 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/712" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="125,839">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>125,839</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat same structure for reels 3 to 12 with values you listed before -->
+
+      <!-- Reel 3 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/713" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+         <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,230,029">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,230,029</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 4 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/723" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+         <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="850,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>850,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 5 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/724" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="920,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>920,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 6 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/725" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,100,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,100,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 7 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/726" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="750,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>750,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 8 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/727" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb极光照片3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="680,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>680,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 9 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/728" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="920,500">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>920,500</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 10 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/729" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,050,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,050,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 11 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/730" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="880,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>880,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 12 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/731" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+    <!-- Reel 13 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/732" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 14 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/733" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 15 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/734" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 16 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/735" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 17 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/736" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 18 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/737" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 19 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/738" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 20 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/739" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 21 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/740" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 22 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/741" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 23 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/742" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 24 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/743" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 25 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/744" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 26 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/745" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 27 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/746" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 28 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/747" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 29 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/748" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Reel 30 -->
+      <div class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="relative pb-[200.00%]">
+          <img src="https://picsum.photos/400/749" class="absolute h-full w-full object-cover reel-image" alt="Reel">
+          <div class="icon-wrapper absolute top-2 right-0.5 w-6 h-6 rounded-full object-cover text-white">
+            <svg aria-label="Story icon" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+              <path d="M3.915 5.31q.337-.407.713-.779m-3.121 7.855Q1.5 12.194 1.5 12a10.505 10.505 0 0 1 .516-3.265m3.243 11.338a10.55 10.55 0 0 1-2.89-3.864m14.482 5.108a10.547 10.547 0 0 1-8.163.65M12.002 1.5a10.504 10.504 0 0 1 7.925 17.39"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+              </svg>
+            </div>
+          <div class="edit-controls absolute inset-0 hidden flex-col justify-center items-center bg-black bg-opacity-70">
+            <input type="file" class="reel-upload hidden" accept="image/*">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-3">Change Image</button>
+            <div class="flex items-center mb-3">
+              <span class="text-white mr-2">Views:</span>
+              <input type="text" class="views-input bg-white text-black px-3 py-1 rounded w-24" value="1,200,000">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Changes</button>
+          </div>
+          <div class="views-display absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white text-sm font-bold bg-[#25292e] px-3 py-1 rounded-full flex items-center">
+            <i class=""></i>
+            <span>1,200,000</span>
+          </div>
+        </div>
+      </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const editBtn = document.getElementById('edit-mode-btn');
+      const editControls = document.querySelectorAll('.edit-controls');
+
+      editBtn.addEventListener('click', () => {
+        const isHidden = editControls[0].classList.contains('hidden');
+        editControls.forEach(control => {
+          control.classList.toggle('hidden', !isHidden);
+          control.classList.toggle('flex', isHidden);
+        });
+        editBtn.textContent = isHidden ? 'Exit Edit Mode' : 'Edit Mode';
+        editBtn.classList.toggle('bg-red-500', isHidden);
+        editBtn.classList.toggle('bg-blue-500', !isHidden);
+      });
+
+      document.querySelectorAll('.edit-controls').forEach(control => {
+        const fileInput = control.querySelector('.reel-upload');
+        const changeBtn = control.querySelector('button:nth-of-type(1)');
+        const saveBtn = control.querySelector('button:nth-of-type(2)');
+        const input = control.querySelector('.views-input');
+
+        changeBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => {
+          const file = e.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (event) {
+              const img = control.closest('.relative').querySelector('.reel-image');
+              img.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+
+        saveBtn.addEventListener('click', () => {
+          const display = control.closest('.relative').querySelector('.views-display span');
+          display.textContent = input.value;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
